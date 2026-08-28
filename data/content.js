@@ -29,12 +29,12 @@ window.PORTFOLIO_CONTENT = {
       { value: "100+", label: "Releases" },
       { value: "500+", label: "Features" }
     ],
-    heroTags: ["Playwright", "Selenium", "Java", "JavaScript", "API Testing"]
+    heroTags: ["Selenium", "Playwright", "Java", "JavaScript", "API Testing"]
   },
 
   links: {
-    email: "your-email@gmail.com",
-    phone: "+91 XXXXXXXXXX",
+    email: "sujankundu399@gmail.com",
+    phone: "+91 8927995106",
     location: "Kolkata, India",
     github: "https://github.com/your-username",
     linkedin: "https://linkedin.com/in/your-username",
@@ -55,7 +55,7 @@ window.PORTFOLIO_CONTENT = {
       { icon: "user", label: "NAME", value: "Sujan Kundu" },
       { icon: "calendar", label: "EXPERIENCE", value: "6+ Years" },
       { icon: "briefcase", label: "CURRENT ROLE", value: "Senior QA Engineer" },
-      { icon: "mail", label: "EMAIL", value: "your-email@gmail.com" },
+      { icon: "mail", label: "EMAIL", value: "sujankundu399@gmail.com" },
       { icon: "pin", label: "LOCATION", value: "Kolkata, India" },
       { icon: "check", label: "AVAILABILITY", value: "Open to Opportunities", positive: true }
     ]
@@ -63,9 +63,9 @@ window.PORTFOLIO_CONTENT = {
 
   highlights: [
     { icon: "check-badge", value: "6+", label: "Years of Experience" },
-    { icon: "list", value: "500+", label: "Features Tested" },
-    { icon: "bug", value: "1200+", label: "Bugs Reported" },
-    { icon: "rocket", value: "100+", label: "Production Releases" },
+    { icon: "list", value: "1000+", label: "Features Tested" },
+    { icon: "bug", value: "1500+", label: "Bugs Reported" },
+    { icon: "rocket", value: "250+", label: "Production Releases" },
     { icon: "team", value: "4", label: "QA Members Mentored" }
   ],
 
@@ -78,8 +78,8 @@ window.PORTFOLIO_CONTENT = {
         tag: "CURRENT",
         active: true,
         employment: "Full Time",
-        role: "Senior QA Engineer",
-        project: "LHG Project",
+        role: "Senior Quality Analyst",
+        project: "Warranty Domain Project",
         description: "Leading quality assurance activities across manual testing, automation, sprint planning, release validation, and continuous QA process improvement.",
         bullets: [
           "Lead QA activities across sprint and release cycles.",
@@ -94,8 +94,8 @@ window.PORTFOLIO_CONTENT = {
         tag: "PREVIOUS ROLE",
         active: false,
         employment: "Full Time",
-        role: "QA Engineer",
-        project: "Software Testing",
+        role: "Jr. QA Engineer",
+        project: "Healthcare Domain Project",
         description: "Worked on end-to-end software testing activities with a strong focus on functional quality, regression testing, defect management, and release validation.",
         bullets: [
           "Designed and executed functional test scenarios.",
@@ -104,20 +104,6 @@ window.PORTFOLIO_CONTENT = {
           "Collaborated with developers and business teams."
         ],
         tech: ["Manual Testing", "Regression Testing", "API Testing", "JIRA"]
-      },
-      {
-        tag: "EARLIER ROLE",
-        active: false,
-        employment: "Full Time",
-        role: "Associate QA Engineer",
-        project: "Product Testing",
-        description: "Started my QA career executing manual test cases and learning the fundamentals of structured software testing.",
-        bullets: [
-          "Executed manual test cases across web and desktop applications.",
-          "Logged and tracked defects using TestNG-based reports.",
-          "Assisted senior engineers with test case documentation."
-        ],
-        tech: ["Manual Testing", "Selenium", "Java", "TestNG"]
       }
     ]
   },
@@ -194,7 +180,7 @@ window.PORTFOLIO_CONTENT = {
     items: [
       { icon: "medal", value: "6+ Years", label: "Professional QA Experience" },
       { icon: "team", value: "QA Lead", label: "Mentoring QA Team Members" },
-      { icon: "rocket", value: "100+", label: "Successful Releases" },
+      { icon: "rocket", value: "350+", label: "Successful Releases" },
       { icon: "code", value: "Automation", label: "Learning Playwright with JavaScript" }
     ]
   },

@@ -1,4 +1,0 @@
-Place your résumé PDF in this folder, named "resume.pdf"
-(or update the `links.resume` path in data/content.js if you name it differently).
-
-You can delete this file once your résumé is added.
