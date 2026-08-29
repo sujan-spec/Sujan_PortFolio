@@ -218,6 +218,7 @@ header.site{
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg-alt);
+  color: var(--text);
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -358,6 +359,19 @@ h1.hero-name .accent{ color: var(--primary); }
 
 /* ---------- hero photo card ---------- */
 .hero-visual{ position: relative; }
+
+.photo-avatar{
+  overflow: hidden;
+  position: relative;
+}
+.photo-avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
 .photo-card{
   background: var(--card);
   border: 1px solid var(--border);
@@ -1053,7 +1067,14 @@ footer.site{
 @media (max-width: 640px){
   .wrap{ padding: 0 20px; }
   .nav{ padding: 12px 20px; }
-  .hero{ padding: 56px 0 56px; }
+
+  .hero{ padding: 24px 0 40px; }         /* ← was 56px 0 56px */
+  .eyebrow{ margin-bottom: 14px; }        /* ← new */
+  h1.hero-name{ margin-bottom: 10px; }    /* ← new */
+  .hero-role{ margin-bottom: 12px; }      /* ← new */
+  .hero-text{ margin-bottom: 20px; }      /* ← new */
+  .hero-cta{ margin-bottom: 18px; }       /* ← new */
+
   .highlights-strip{ grid-template-columns: 1fr 1fr; }
   .achieve-grid{ grid-template-columns: 1fr; }
   .info-grid{ grid-template-columns: 1fr; }
@@ -1095,14 +1116,4 @@ footer.site{
 }
 .mobile-nav a:last-child{ border-bottom: none; }
 
-.photo-avatar{
-  overflow: hidden;
-  position: relative;
-}
-.photo-avatar img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-}
+
