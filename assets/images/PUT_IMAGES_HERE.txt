@@ -1,6 +1,0 @@
-Add any images here (headshot, project screenshots, etc.) and reference
-them in data/content.js or index.html as needed, e.g.:
-
-<img src="assets/images/headshot.jpg" alt="...">
-
-You can delete this file once you've added real images.

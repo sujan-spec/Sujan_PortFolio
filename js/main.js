@@ -136,6 +136,20 @@
     const photoRole = document.getElementById('heroPhotoRole');
     if(photoRole) photoRole.textContent = C.profile.title;
 
+        // Show the real photo if one is set in data/content.js, otherwise keep initials.
+    const heroPhotoImg = document.getElementById('heroPhotoImg');
+    if(heroPhotoImg && C.profile.photo){
+      heroPhotoImg.src = C.profile.photo;
+      heroPhotoImg.onload = () => {
+        heroPhotoImg.style.display = 'block';
+        if(photoInitials) photoInitials.style.display = 'none';
+      };
+      heroPhotoImg.onerror = () => {
+        heroPhotoImg.style.display = 'none';
+        if(photoInitials) photoInitials.style.display = 'block';
+      };
+    }
+
     // typewriter role cycler
     const roleEl = document.getElementById('heroRoleText');
     if(roleEl && C.profile.roles && C.profile.roles.length){
@@ -181,6 +195,21 @@
     setText('aboutRoleHeading', A.roleHeading);
     setText('aboutPhotoInitials', C.profile.initials);
     setHTML('aboutPhotoBadge', A.photoBadge);
+
+    // Show the real photo if one is set in data/content.js, otherwise keep initials.
+const photoImg = document.getElementById('aboutPhotoImg');
+const photoInitials = document.getElementById('aboutPhotoInitials');
+if(photoImg && C.profile.photo){
+  photoImg.src = C.profile.photo;
+  photoImg.onload = () => {
+    photoImg.style.display = 'block';
+    if(photoInitials) photoInitials.style.display = 'none';
+  };
+  photoImg.onerror = () => {
+    photoImg.style.display = 'none';
+    if(photoInitials) photoInitials.style.display = 'block';
+  };
+}
 
     const copyEl = document.getElementById('aboutParagraphs');
     if(copyEl){

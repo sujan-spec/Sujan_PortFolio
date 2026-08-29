@@ -10,6 +10,7 @@ window.PORTFOLIO_CONTENT = {
 
   profile: {
     initials: "SK",
+    photo: "assets/images/profile.png",
     name: "Sujan Kundu",
     title: "Senior QA Engineer",
     roles: [

@@ -1,229 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
-<meta name="description" content="Senior QA Engineer portfolio — manual testing, automation, and QA leadership.">
-<meta name="color-scheme" content="light dark">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <meta name="description" content="Senior QA Engineer portfolio — manual testing, automation, and QA leadership.">
+  <meta name="color-scheme" content="light dark">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-<!-- Set theme before paint to avoid a flash of the wrong theme -->
-<script>
-  (function(){
-    var saved = localStorage.getItem('portfolio-theme');
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
-  })();
-</script>
+  <!-- Set theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('portfolio-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
 </head>
+
 <body>
 
-<header class="site">
-  <nav class="nav">
-    <a class="nav-brand" href="#home">
-      <span class="avatar" data-bind="avatar-initials">SK</span>
-      <span class="nav-brand-text">
-        <span class="name" data-bind="name">Name</span>
-        <span class="role" data-bind="title">Title</span>
-      </span>
-    </a>
+  <header class="site">
+    <nav class="nav">
+      <a class="nav-brand" href="#home">
+        <span class="avatar" data-bind="avatar-initials">SK</span>
+        <span class="nav-brand-text">
+          <span class="name" data-bind="name">Name</span>
+          <span class="role" data-bind="title">Title</span>
+        </span>
+      </a>
 
-    <ul class="nav-links" id="navLinks"></ul>
+      <ul class="nav-links" id="navLinks"></ul>
 
-    <div class="nav-actions">
-      <a class="btn-resume" data-bind="link-resume" href="#" target="_blank" rel="noopener">Resume</a>
-      <button class="theme-toggle" data-action="toggle-theme" aria-label="Toggle dark mode"></button>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu"></button>
-    </div>
-  </nav>
-  <div class="mobile-nav" id="mobileNav"></div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg-blob b1"></div>
-    <div class="hero-bg-blob b2"></div>
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow"><span class="dot"></span><span id="heroBadge">Welcome</span></span>
-        <h1 class="hero-name" id="heroName">Hi, I'm Name</h1>
-        <p class="hero-role"><span id="heroRoleText"></span><span class="cursor" aria-hidden="true"></span></p>
-        <p class="hero-text" id="heroText"></p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" data-bind="link-resume" href="#" target="_blank" rel="noopener">
-            <span id="btnResumeIcon"></span> Download Resume
-          </a>
-          <a class="btn btn-outline" href="#contact">Contact Me</a>
-        </div>
-        <div class="hero-socials">
-          <a class="social-btn social-icon-linkedin" data-bind="link-linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"></a>
-          <a class="social-btn social-icon-github" data-bind="link-github" href="#" target="_blank" rel="noopener" aria-label="GitHub"></a>
-          <a class="social-btn social-icon-mail" data-bind="link-email" href="#" aria-label="Email"></a>
-        </div>
+      <div class="nav-actions">
+        <a class="btn-resume" data-bind="link-resume" href="#" target="_blank" rel="noopener">Resume</a>
+        <button class="theme-toggle" data-action="toggle-theme" aria-label="Toggle dark mode"></button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu"></button>
       </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav"></div>
+  </header>
 
-      <div class="hero-visual">
-        <div class="photo-card">
-          <div class="floating-badge fb1" id="heroYearsBadge"></div>
-          <div class="photo-ring">
-            <div class="photo-ring-inner">
-              <div class="photo-avatar" id="heroPhotoInitials">SK</div>
-            </div>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg-blob b1"></div>
+      <div class="hero-bg-blob b2"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span><span id="heroBadge">Welcome</span></span>
+          <h1 class="hero-name" id="heroName">Hi, I'm Name</h1>
+          <p class="hero-role"><span id="heroRoleText"></span><span class="cursor" aria-hidden="true"></span></p>
+          <p class="hero-text" id="heroText"></p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" data-bind="link-resume" href="#" target="_blank" rel="noopener">
+              <span id="btnResumeIcon"></span> Download Resume
+            </a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
           </div>
-          <h3 id="heroPhotoName">Name</h3>
-          <p class="role-sub" id="heroPhotoRole">Title</p>
-          <div class="hero-stat-row" id="heroStats"></div>
-          <div class="hero-tag-row" id="heroTags"></div>
-          <div class="floating-badge fb2" id="heroFloat2"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="scroll-cue">
-      <div class="mouse"><div class="wheel"></div></div>
-      Scroll Down
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="wrap">
-      <div class="section-center">
-        <span class="badge-pill" id="aboutBadge">About Me</span>
-        <h2 class="section-title" id="aboutHeading">Who I Am</h2>
-        <p class="section-sub" id="aboutSubheading"></p>
-      </div>
-      <div class="about-grid">
-        <div class="about-photo-wrap">
-          <div class="about-photo-frame">
-            <div class="about-photo-inner" id="aboutPhotoInitials">SK</div>
+          <div class="hero-socials">
+            <a class="social-btn social-icon-linkedin" data-bind="link-linkedin" href="#" target="_blank" rel="noopener"
+              aria-label="LinkedIn"></a>
+            <a class="social-btn social-icon-github" data-bind="link-github" href="#" target="_blank" rel="noopener"
+              aria-label="GitHub"></a>
+            <a class="social-btn social-icon-mail" data-bind="link-email" href="#" aria-label="Email"></a>
           </div>
-          <div class="about-badge-float" id="aboutPhotoBadge"></div>
         </div>
-        <div class="about-copy">
-          <h3 id="aboutRoleHeading">Senior QA Engineer</h3>
-          <div class="title-underline"></div>
-          <div id="aboutParagraphs"></div>
-          <div class="info-grid" id="infoGrid"></div>
-          <a class="btn btn-primary" data-bind="link-resume" href="#" target="_blank" rel="noopener">Download CV</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- HIGHLIGHTS STRIP -->
-  <section class="section-alt">
-    <div class="wrap">
-      <div class="highlights-strip" id="highlightsStrip"></div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="wrap">
-      <div class="section-center">
-        <span class="badge-pill" id="expBadge">Career Journey</span>
-        <h2 class="section-title" id="expHeading">Professional Experience</h2>
-        <p class="section-sub" id="expSubheading"></p>
-      </div>
-      <div class="timeline" id="timeline"></div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section-alt">
-    <div class="wrap">
-      <div class="section-center">
-        <span class="badge-pill" id="skillsBadge">My Expertise</span>
-        <h2 class="section-title" id="skillsHeading">Core Skills &amp; Technologies</h2>
-        <p class="section-sub" id="skillsSubheading"></p>
-      </div>
-      <div class="skills-grid" id="skillsGrid"></div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="wrap">
-      <div class="section-center">
-        <span class="badge-pill" id="projectsBadge">Portfolio</span>
-        <h2 class="section-title" id="projectsHeading">Featured Projects</h2>
-        <p class="section-sub" id="projectsSubheading"></p>
-      </div>
-      <div class="projects-grid" id="projectsGrid"></div>
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section id="achievements" class="section-alt">
-    <div class="wrap">
-      <div class="section-center">
-        <span class="badge-pill" id="achieveBadge">Achievements</span>
-        <h2 class="section-title" id="achieveHeading">Professional Highlights</h2>
-      </div>
-      <div class="achieve-grid" id="achieveGrid"></div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="section-center">
-        <span class="badge-pill" id="contactBadgeLabel">Get In Touch</span>
-        <h2 class="section-title" id="contactHeadingTop">Let's Connect</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info-card">
-          <h3 id="contactHeading">Get in Touch</h3>
-          <p id="contactBody"></p>
-          <div id="contactRows"></div>
-        </div>
-        <div class="contact-form-card">
-          <form id="contactForm">
-            <div class="form-row">
-              <input class="form-field" type="text" placeholder="Your Name" required>
-              <input class="form-field" type="email" placeholder="Email Address" required>
+        <div class="hero-visual">
+          <div class="photo-card">
+            <div class="floating-badge fb1" id="heroYearsBadge"></div>
+            <div class="photo-ring">
+              <div class="photo-ring-inner">
+                <div class="photo-avatar" id="heroPhotoAvatar">
+  <img id="heroPhotoImg" alt="Profile photo" style="display:none;">
+  <span id="heroPhotoInitials">SK</span>
+</div>
+              </div>
             </div>
-            <input class="form-field" type="text" placeholder="Subject" style="margin-bottom:16px;" required>
-            <textarea class="form-field" placeholder="Write your message..." required></textarea>
-            <button class="btn-submit" type="submit"><span id="sendIcon"></span> Send Message</button>
-            <div class="form-note" id="formNote"></div>
-          </form>
+            <h3 id="heroPhotoName">Name</h3>
+            <p class="role-sub" id="heroPhotoRole">Title</p>
+            <div class="hero-stat-row" id="heroStats"></div>
+            <div class="hero-tag-row" id="heroTags"></div>
+            <div class="floating-badge fb2" id="heroFloat2"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-</main>
-
-<footer class="site">
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="name" data-bind="name">Name</div>
-        <div class="tagline" id="footerTagline"></div>
+      <div class="scroll-cue">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        Scroll Down
       </div>
-      <div class="footer-socials">
-        <a class="social-icon-linkedin" data-bind="link-linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"></a>
-        <a class="social-icon-github" data-bind="link-github" href="#" target="_blank" rel="noopener" aria-label="GitHub"></a>
-        <a class="social-icon-mail" data-bind="link-email" href="#" aria-label="Email"></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-center">
+          <span class="badge-pill" id="aboutBadge">About Me</span>
+          <h2 class="section-title" id="aboutHeading">Who I Am</h2>
+          <p class="section-sub" id="aboutSubheading"></p>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <div class="about-photo-frame">
+              <div class="about-photo-inner" id="aboutPhotoInner">
+                <img id="aboutPhotoImg" alt="Profile photo" style="display:none;">
+                <span id="aboutPhotoInitials">SK</span>
+              </div>
+            </div>
+            <div class="about-badge-float" id="aboutPhotoBadge"></div>
+          </div>
+          <div class="about-copy">
+            <h3 id="aboutRoleHeading">Senior QA Engineer</h3>
+            <div class="title-underline"></div>
+            <div id="aboutParagraphs"></div>
+            <div class="info-grid" id="infoGrid"></div>
+            <a class="btn btn-primary" data-bind="link-resume" href="#" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- HIGHLIGHTS STRIP -->
+    <section class="section-alt">
+      <div class="wrap">
+        <div class="highlights-strip" id="highlightsStrip"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-center">
+          <span class="badge-pill" id="expBadge">Career Journey</span>
+          <h2 class="section-title" id="expHeading">Professional Experience</h2>
+          <p class="section-sub" id="expSubheading"></p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-alt">
+      <div class="wrap">
+        <div class="section-center">
+          <span class="badge-pill" id="skillsBadge">My Expertise</span>
+          <h2 class="section-title" id="skillsHeading">Core Skills &amp; Technologies</h2>
+          <p class="section-sub" id="skillsSubheading"></p>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-center">
+          <span class="badge-pill" id="projectsBadge">Portfolio</span>
+          <h2 class="section-title" id="projectsHeading">Featured Projects</h2>
+          <p class="section-sub" id="projectsSubheading"></p>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section-alt">
+      <div class="wrap">
+        <div class="section-center">
+          <span class="badge-pill" id="achieveBadge">Achievements</span>
+          <h2 class="section-title" id="achieveHeading">Professional Highlights</h2>
+        </div>
+        <div class="achieve-grid" id="achieveGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-center">
+          <span class="badge-pill" id="contactBadgeLabel">Get In Touch</span>
+          <h2 class="section-title" id="contactHeadingTop">Let's Connect</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3 id="contactHeading">Get in Touch</h3>
+            <p id="contactBody"></p>
+            <div id="contactRows"></div>
+          </div>
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-row">
+                <input class="form-field" type="text" placeholder="Your Name" required>
+                <input class="form-field" type="email" placeholder="Email Address" required>
+              </div>
+              <input class="form-field" type="text" placeholder="Subject" style="margin-bottom:16px;" required>
+              <textarea class="form-field" placeholder="Write your message..." required></textarea>
+              <button class="btn-submit" type="submit"><span id="sendIcon"></span> Send Message</button>
+              <div class="form-note" id="formNote"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="name" data-bind="name">Name</div>
+          <div class="tagline" id="footerTagline"></div>
+        </div>
+        <div class="footer-socials">
+          <a class="social-icon-linkedin" data-bind="link-linkedin" href="#" target="_blank" rel="noopener"
+            aria-label="LinkedIn"></a>
+          <a class="social-icon-github" data-bind="link-github" href="#" target="_blank" rel="noopener"
+            aria-label="GitHub"></a>
+          <a class="social-icon-mail" data-bind="link-email" href="#" aria-label="Email"></a>
+        </div>
+      </div>
+      <div class="footer-bottom" id="footerCopyright"></div>
     </div>
-    <div class="footer-bottom" id="footerCopyright"></div>
-  </div>
-</footer>
+  </footer>
 
-<button class="back-to-top" id="backToTop" aria-label="Back to top"></button>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"></button>
 
-<script src="data/content.js"></script>
-<script src="js/icons.js"></script>
-<script src="js/main.js"></script>
+  <script src="data/content.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
