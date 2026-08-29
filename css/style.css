@@ -230,7 +230,7 @@ header.site{
    ============================================================ */
 .hero{
   position: relative;
-  padding: 88px 0 80px;
+  padding: 15px 0 40px;
   overflow: hidden;
 }
 .hero-bg-blob{
@@ -281,7 +281,7 @@ header.site{
 
 h1.hero-name{
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: clamp(38px, 4.8vw, 58px);
   line-height: 1.08;
   margin: 0 0 16px;
@@ -467,45 +467,16 @@ h1.hero-name .accent{ color: var(--primary); }
   }
   .photo-card .floating-badge.fb1{ order: 0; }
   .floating-badge.fb1{ top: 6%; right: -7%; }
-  .floating-badge.fb2{ bottom: 20%; right: -10%; }
+  .floating-badge.fb2{ bottom: 25%; right: -10%; }
 }
 @keyframes float{
   0%, 100%{ transform: translateY(0); }
   50%{ transform: translateY(-10px); }
 }
-
-.scroll-cue{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 56px;
-  color: var(--text-muted);
-  font-size: 12.5px;
-}
-.scroll-cue .mouse{
-  width: 24px; height: 38px;
-  border: 2px solid var(--border);
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  padding-top: 6px;
-}
-.scroll-cue .mouse .wheel{
-  width: 3px; height: 8px;
-  background: var(--primary);
-  border-radius: 100px;
-  animation: scrollwheel 1.6s ease infinite;
-}
-@keyframes scrollwheel{
-  0%{ transform: translateY(0); opacity: 1; }
-  100%{ transform: translateY(8px); opacity: 0; }
-}
-
 /* ============================================================
    SECTION SHELL
    ============================================================ */
-section{ padding: 90px 0; position: relative; }
+section{ padding: 20px 0; position: relative; }
 .section-alt{ background: var(--bg-tint); }
 .section-center{ text-align: center; max-width: 640px; margin: 0 auto 56px; }
 
