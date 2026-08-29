@@ -1067,14 +1067,13 @@ footer.site{
 @media (max-width: 640px){
   .wrap{ padding: 0 20px; }
   .nav{ padding: 12px 20px; }
-
-  .hero{ padding: 24px 0 40px; }         /* ← was 56px 0 56px */
-  .eyebrow{ margin-bottom: 14px; }        /* ← new */
-  h1.hero-name{ margin-bottom: 10px; }    /* ← new */
-  .hero-role{ margin-bottom: 12px; }      /* ← new */
-  .hero-text{ margin-bottom: 20px; }      /* ← new */
-  .hero-cta{ margin-bottom: 18px; }       /* ← new */
-
+  .hero{ padding: 24px 0 40px; }
+  .eyebrow{ margin-bottom: 14px; }
+  h1.hero-name{ margin-bottom: 10px; }
+  .hero-role{ margin-bottom: 12px; }
+  .hero-text{ margin-bottom: 20px; }
+  .hero-cta{ margin-bottom: 18px; }
+  h1.hero-name{ font-size: clamp(26px, 8vw, 40px); }
   .highlights-strip{ grid-template-columns: 1fr 1fr; }
   .achieve-grid{ grid-template-columns: 1fr; }
   .info-grid{ grid-template-columns: 1fr; }
