@@ -39,7 +39,7 @@ window.PORTFOLIO_CONTENT = {
     location: "Kolkata, India",
     github: "https://github.com/your-username",
     linkedin: "https://linkedin.com/in/your-username",
-    resume: "assets/resume/resume.pdf"
+    resume: "assets/resume/Sujan_Kundu_QA_Automation.pdf"
   },
 
   about: {
